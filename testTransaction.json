@@ -1,0 +1,68 @@
+{
+    "version": "1.0.0",
+    "title": "Can we make a new transaction?",
+    "description": "The system should respond to a transaction request.",
+    "tags": ["tx"],
+    "steady-state-hypothesis": {
+        "title": "Chain exists",
+        "probes": [
+            {
+                "type": "probe",
+                "name": "chain-exists",
+                "tolerance": 200,
+                "provider": {
+                    "type": "http",
+                    "timeout": 5,
+                    "url": "http://127.0.0.1:5000/chain"
+                }
+            }
+        ]
+    },
+    "method": [
+        {
+            "type": "action",
+            "name": "make-new-transaction",
+            "provider": {
+                "type": "http",
+                "timeout": 1,
+                "url": "http://127.0.0.1:5000/transactions/new",
+                "method": "POST",
+                "headers": {
+                    "Content-Type": "application/json"
+                },
+                "arguments": {
+                    "sender": "me",
+                    "recipient": "new-other-address",
+                    "amount": 20
+                }
+            }
+        },
+        {
+            "type": "probe",
+            "name": "check-chain",
+            "provider": {
+                "type": "http",
+                "url": "http://127.0.0.1:5000/mine"
+            }
+        },
+        {
+            "type": "action",
+            "name": "mine-block",
+            "provider": {
+                "type": "http",
+                "timeout": 3,
+                "url": "http://127.0.0.1:5000/mine"
+            }
+        },
+        {
+            "type": "probe",
+            "name": "check-chain",
+            "provider": {
+                "type": "http",
+                "url": "http://127.0.0.1:5000/mine"
+            }
+        }
+    ],
+    "rollbacks": [
+    ]
+}

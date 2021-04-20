@@ -1,0 +1,88 @@
+{
+    "version": "1.0.0",
+    "title": "Does the consensus method work accurately?",
+    "description": "The system should respond to a transaction request.",
+    "tags": ["tx"],
+    "steady-state-hypothesis": {
+        "title": "Chains exist and nodes are registered",
+        "probes": [
+            {
+                "type": "probe",
+                "name": "chain-1-exists",
+                "tolerance": 200,
+                "provider": {
+                    "type": "http",
+                    "timeout": 5,
+                    "url": "http://127.0.0.1:5000/chain"
+                }
+            },
+            {
+                "type": "probe",
+                "name": "chain-2-exists",
+                "tolerance": 200,
+                "provider": {
+                    "type": "http",
+                    "timeout": 5,
+                    "url": "http://127.0.0.1:5001/chain"
+                }
+            },
+            {
+                "type": "probe",
+                "name": "nodes-are-registered",
+                "tolerance": 201,
+                "provider": {
+                    "type": "http",
+                    "timeout": 1,
+                    "url": "http://127.0.0.1:5000/nodes/register",
+                    "method": "POST",
+                    "headers": {
+                        "Content-Type": "application/json"
+                    },
+                    "arguments": {
+                        "nodes": ["http://127.0.0.1:5001"]
+                    }
+                }
+           }
+        ]
+    },
+    "method": [
+        {
+            "type": "action",
+            "name": "simulate activity",
+            "provider": {
+                "type": "python",
+                "module": "os",
+                    "func": "system",
+                    "arguments": {
+                        "command": "python -c \"import activity; activity.run(100)\""
+                    }
+            }
+        },
+        {
+            "type": "probe",
+            "name": "check-first-chain",
+            "provider": {
+                "type": "http",
+                "url": "http://127.0.0.1:5000/chain"
+            }
+        },
+        {
+            "type": "probe",
+            "name": "check-second-chain",
+            "provider": {
+                "type": "http",
+                "url": "http://127.0.0.1:5001/chain"
+            }
+        },
+        {
+            "type": "action",
+            "name": "resolve-chains",
+            "provider": {
+                "type": "http",
+                "url": "http://127.0.0.1:5000/nodes/resolve"
+            }
+        }
+    ],
+    "rollbacks": [
+    ]
+}

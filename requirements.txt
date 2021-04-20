@@ -1,0 +1,5 @@
+Flask==0.12.2
+Werkzeug==0.16.1
+requests==2.18.4
+chaostoolkit
+chaostoolkit-lib[jsonpath]
