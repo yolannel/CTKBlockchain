@@ -2014,3 +2014,685 @@
 [36m[2021-04-09 14:28:50 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
 [36m[2021-04-09 14:28:50 DEBUG] [__init__:72][39m Cleaning up controls
 [36m[2021-04-09 14:28:50 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2021-04-29 16:10:51 DEBUG][39m ###############################################################################
+[36m[2021-04-29 16:10:51 DEBUG][39m Running command 'run'
+[36m[2021-04-29 16:10:51 DEBUG][39m Using settings file 'C:\Users\yolan\.chaostoolkit\settings.yaml'
+[33m[2021-04-29 16:10:51 WARNING][39m 
+    There is a new version (1.9.0) of the chaostoolkit available.
+    You may upgrade by typing:
+    
+    $ pip install -U chaostoolkit
+    
+    Please review changes at https://github.com/chaostoolkit/chaostoolkit/blob/master/CHANGELOG.md
+    
+[36m[2021-04-29 16:10:51 DEBUG][39m The Chaos Toolkit settings file could not be found at 'C:\Users\yolan\.chaostoolkit\settings.yaml'.
+[36m[2021-04-29 16:10:51 DEBUG][39m Building activity cache...
+[36m[2021-04-29 16:10:51 DEBUG][39m Cached 4 activities
+[32m[2021-04-29 16:10:51 INFO][39m Validating the experiment's syntax
+[36m[2021-04-29 16:10:51 DEBUG][39m Loading configuration...
+[36m[2021-04-29 16:10:51 DEBUG][39m Loading secrets...
+[36m[2021-04-29 16:10:51 DEBUG][39m Secrets loaded
+[32m[2021-04-29 16:10:51 INFO][39m Experiment looks valid
+[36m[2021-04-29 16:10:51 DEBUG][39m Clearing activities cache
+[36m[2021-04-29 16:10:51 DEBUG][39m Building activity cache...
+[36m[2021-04-29 16:10:51 DEBUG][39m Cached 4 activities
+[32m[2021-04-29 16:10:51 INFO][39m Running experiment: Can we make a new transaction?
+[36m[2021-04-29 16:10:51 DEBUG][39m Loading configuration...
+[36m[2021-04-29 16:10:51 DEBUG][39m Loading secrets...
+[36m[2021-04-29 16:10:51 DEBUG][39m Secrets loaded
+[36m[2021-04-29 16:10:51 DEBUG][39m Initializing controls
+[32m[2021-04-29 16:10:51 INFO][39m Steady state hypothesis: Chain exists
+[32m[2021-04-29 16:10:51 INFO][39m Probe: chain-exists
+[36m[2021-04-29 16:10:51 DEBUG][39m   => succeeded with '{'status': 200, 'headers': {'Content-Type': 'application/json', 'Content-Length': '173', 'Server': 'Werkzeug/0.16.1 Python/3.8.5', 'Date': 'Thu, 29 Apr 2021 15:10:51 GMT'}, 'body': {'chain': [{'index': 1, 'previous_hash': '1', 'proof': 100, 'timestamp': 1619708953.4401147, 'tx': []}], 'length': 1}}'
+[36m[2021-04-29 16:10:51 DEBUG][39m allowed tolerance is 200
+[32m[2021-04-29 16:10:51 INFO][39m Steady state hypothesis is met!
+[32m[2021-04-29 16:10:51 INFO][39m Action: make-new-transaction
+[33m[2021-04-29 16:10:51 WARNING][39m This HTTP call returned a response with a HTTP status code above 400. This may indicate some error and not what you expected. Please have a look at the logs.
+[36m[2021-04-29 16:10:51 DEBUG][39m   => succeeded with '{'status': 404, 'headers': {'Content-Type': 'text/html', 'Content-Length': '232', 'Server': 'Werkzeug/0.16.1 Python/3.8.5', 'Date': 'Thu, 29 Apr 2021 15:10:51 GMT'}, 'body': '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">\n<title>404 Not Found</title>\n<h1>Not Found</h1>\n<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>\n'}'
+[32m[2021-04-29 16:10:51 INFO][39m Probe: check-chain
+[33m[2021-04-29 16:10:51 WARNING][39m This HTTP call returned a response with a HTTP status code above 400. This may indicate some error and not what you expected. Please have a look at the logs.
+[36m[2021-04-29 16:10:51 DEBUG][39m   => succeeded with '{'status': 500, 'headers': {'Content-Type': 'text/html', 'Content-Length': '290', 'Server': 'Werkzeug/0.16.1 Python/3.8.5', 'Date': 'Thu, 29 Apr 2021 15:10:51 GMT'}, 'body': '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">\n<title>500 Internal Server Error</title>\n<h1>Internal Server Error</h1>\n<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>\n'}'
+[32m[2021-04-29 16:10:51 INFO][39m Action: mine-block
+[33m[2021-04-29 16:10:52 WARNING][39m This HTTP call returned a response with a HTTP status code above 400. This may indicate some error and not what you expected. Please have a look at the logs.
+[36m[2021-04-29 16:10:52 DEBUG][39m   => succeeded with '{'status': 500, 'headers': {'Content-Type': 'text/html', 'Content-Length': '290', 'Server': 'Werkzeug/0.16.1 Python/3.8.5', 'Date': 'Thu, 29 Apr 2021 15:10:52 GMT'}, 'body': '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">\n<title>500 Internal Server Error</title>\n<h1>Internal Server Error</h1>\n<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>\n'}'
+[32m[2021-04-29 16:10:52 INFO][39m Probe: check-chain
+[33m[2021-04-29 16:10:52 WARNING][39m This HTTP call returned a response with a HTTP status code above 400. This may indicate some error and not what you expected. Please have a look at the logs.
+[36m[2021-04-29 16:10:52 DEBUG][39m   => succeeded with '{'status': 500, 'headers': {'Content-Type': 'text/html', 'Content-Length': '290', 'Server': 'Werkzeug/0.16.1 Python/3.8.5', 'Date': 'Thu, 29 Apr 2021 15:10:52 GMT'}, 'body': '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">\n<title>500 Internal Server Error</title>\n<h1>Internal Server Error</h1>\n<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>\n'}'
+[32m[2021-04-29 16:10:52 INFO][39m Steady state hypothesis: Chain exists
+[32m[2021-04-29 16:10:52 INFO][39m Probe: chain-exists
+[36m[2021-04-29 16:10:52 DEBUG][39m   => succeeded with '{'status': 200, 'headers': {'Content-Type': 'application/json', 'Content-Length': '173', 'Server': 'Werkzeug/0.16.1 Python/3.8.5', 'Date': 'Thu, 29 Apr 2021 15:10:52 GMT'}, 'body': {'chain': [{'index': 1, 'previous_hash': '1', 'proof': 100, 'timestamp': 1619708953.4401147, 'tx': []}], 'length': 1}}'
+[36m[2021-04-29 16:10:52 DEBUG][39m allowed tolerance is 200
+[32m[2021-04-29 16:10:52 INFO][39m Steady state hypothesis is met!
+[32m[2021-04-29 16:10:52 INFO][39m Let's rollback...
+[32m[2021-04-29 16:10:52 INFO][39m No declared rollbacks, let's move on.
+[32m[2021-04-29 16:10:52 INFO][39m Experiment ended with status: completed
+[36m[2021-04-29 16:10:52 DEBUG][39m Cleaning up controls
+[36m[2021-04-29 16:10:52 DEBUG][39m Clearing activities cache
+[36m[2021-04-29 16:13:58 DEBUG][39m ###############################################################################
+[36m[2021-04-29 16:13:58 DEBUG][39m Running command 'run'
+[36m[2021-04-29 16:13:58 DEBUG][39m Using settings file 'C:\Users\yolan\.chaostoolkit\settings.yaml'
+[33m[2021-04-29 16:13:58 WARNING][39m 
+    There is a new version (1.9.0) of the chaostoolkit available.
+    You may upgrade by typing:
+    
+    $ pip install -U chaostoolkit
+    
+    Please review changes at https://github.com/chaostoolkit/chaostoolkit/blob/master/CHANGELOG.md
+    
+[36m[2021-04-29 16:13:58 DEBUG][39m The Chaos Toolkit settings file could not be found at 'C:\Users\yolan\.chaostoolkit\settings.yaml'.
+[36m[2021-04-29 16:13:58 DEBUG][39m Building activity cache...
+[36m[2021-04-29 16:13:58 DEBUG][39m Cached 7 activities
+[32m[2021-04-29 16:13:58 INFO][39m Validating the experiment's syntax
+[36m[2021-04-29 16:13:58 DEBUG][39m Loading configuration...
+[36m[2021-04-29 16:13:58 DEBUG][39m Loading secrets...
+[36m[2021-04-29 16:13:58 DEBUG][39m Secrets loaded
+[32m[2021-04-29 16:13:58 INFO][39m Experiment looks valid
+[36m[2021-04-29 16:13:58 DEBUG][39m Clearing activities cache
+[36m[2021-04-29 16:13:58 DEBUG][39m Building activity cache...
+[36m[2021-04-29 16:13:58 DEBUG][39m Cached 7 activities
+[32m[2021-04-29 16:13:58 INFO][39m Running experiment: Does the consensus method work accurately?
+[36m[2021-04-29 16:13:58 DEBUG][39m Loading configuration...
+[36m[2021-04-29 16:13:58 DEBUG][39m Loading secrets...
+[36m[2021-04-29 16:13:58 DEBUG][39m Secrets loaded
+[36m[2021-04-29 16:13:58 DEBUG][39m Initializing controls
+[32m[2021-04-29 16:13:58 INFO][39m Steady state hypothesis: Chains exist and nodes are registered
+[32m[2021-04-29 16:13:58 INFO][39m Probe: chain-1-exists
+[36m[2021-04-29 16:13:58 DEBUG][39m   => succeeded with '{'status': 200, 'headers': {'Content-Type': 'application/json', 'Content-Length': '173', 'Server': 'Werkzeug/0.16.1 Python/3.8.5', 'Date': 'Thu, 29 Apr 2021 15:13:58 GMT'}, 'body': {'chain': [{'index': 1, 'previous_hash': '1', 'proof': 100, 'timestamp': 1619708953.4401147, 'tx': []}], 'length': 1}}'
+[36m[2021-04-29 16:13:58 DEBUG][39m allowed tolerance is 200
+[32m[2021-04-29 16:13:58 INFO][39m Probe: chain-2-exists
+[36m[2021-04-29 16:13:58 DEBUG][39m   => succeeded with '{'status': 200, 'headers': {'Content-Type': 'application/json', 'Content-Length': '172', 'Server': 'Werkzeug/0.16.1 Python/3.8.5', 'Date': 'Thu, 29 Apr 2021 15:13:58 GMT'}, 'body': {'chain': [{'index': 1, 'previous_hash': '1', 'proof': 100, 'timestamp': 1619709208.126718, 'tx': []}], 'length': 1}}'
+[36m[2021-04-29 16:13:58 DEBUG][39m allowed tolerance is 200
+[32m[2021-04-29 16:13:58 INFO][39m Probe: nodes-are-registered
+[36m[2021-04-29 16:13:58 DEBUG][39m   => succeeded with '{'status': 201, 'headers': {'Content-Type': 'application/json', 'Content-Length': '83', 'Server': 'Werkzeug/0.16.1 Python/3.8.5', 'Date': 'Thu, 29 Apr 2021 15:13:58 GMT'}, 'body': {'message': 'New node(s) added', 'total_nodes': ['127.0.0.1:5001']}}'
+[36m[2021-04-29 16:13:58 DEBUG][39m allowed tolerance is 201
+[32m[2021-04-29 16:13:58 INFO][39m Steady state hypothesis is met!
+[32m[2021-04-29 16:13:58 INFO][39m Action: simulate activity
+[36m[2021-04-29 16:14:01 DEBUG][39m   => succeeded with '0'
+[32m[2021-04-29 16:14:01 INFO][39m Probe: check-first-chain
+[36m[2021-04-29 16:14:01 DEBUG][39m   => succeeded with '{'status': 200, 'headers': {'Content-Type': 'application/json', 'Content-Length': '173', 'Server': 'Werkzeug/0.16.1 Python/3.8.5', 'Date': 'Thu, 29 Apr 2021 15:14:01 GMT'}, 'body': {'chain': [{'index': 1, 'previous_hash': '1', 'proof': 100, 'timestamp': 1619708953.4401147, 'tx': []}], 'length': 1}}'
+[32m[2021-04-29 16:14:01 INFO][39m Probe: check-second-chain
+[36m[2021-04-29 16:14:01 DEBUG][39m   => succeeded with '{'status': 200, 'headers': {'Content-Type': 'application/json', 'Content-Length': '172', 'Server': 'Werkzeug/0.16.1 Python/3.8.5', 'Date': 'Thu, 29 Apr 2021 15:14:01 GMT'}, 'body': {'chain': [{'index': 1, 'previous_hash': '1', 'proof': 100, 'timestamp': 1619709208.126718, 'tx': []}], 'length': 1}}'
+[32m[2021-04-29 16:14:01 INFO][39m Action: resolve-chains
+[36m[2021-04-29 16:14:01 DEBUG][39m   => succeeded with '{'status': 200, 'headers': {'Content-Type': 'application/json', 'Content-Length': '201', 'Server': 'Werkzeug/0.16.1 Python/3.8.5', 'Date': 'Thu, 29 Apr 2021 15:14:01 GMT'}, 'body': {'chain': [{'index': 1, 'previous_hash': '1', 'proof': 100, 'timestamp': 1619708953.4401147, 'tx': []}], 'message': 'Our chain is authoritative'}}'
+[32m[2021-04-29 16:14:01 INFO][39m Steady state hypothesis: Chains exist and nodes are registered
+[32m[2021-04-29 16:14:01 INFO][39m Probe: chain-1-exists
+[36m[2021-04-29 16:14:01 DEBUG][39m   => succeeded with '{'status': 200, 'headers': {'Content-Type': 'application/json', 'Content-Length': '173', 'Server': 'Werkzeug/0.16.1 Python/3.8.5', 'Date': 'Thu, 29 Apr 2021 15:14:01 GMT'}, 'body': {'chain': [{'index': 1, 'previous_hash': '1', 'proof': 100, 'timestamp': 1619708953.4401147, 'tx': []}], 'length': 1}}'
+[36m[2021-04-29 16:14:01 DEBUG][39m allowed tolerance is 200
+[32m[2021-04-29 16:14:01 INFO][39m Probe: chain-2-exists
+[36m[2021-04-29 16:14:01 DEBUG][39m   => succeeded with '{'status': 200, 'headers': {'Content-Type': 'application/json', 'Content-Length': '172', 'Server': 'Werkzeug/0.16.1 Python/3.8.5', 'Date': 'Thu, 29 Apr 2021 15:14:01 GMT'}, 'body': {'chain': [{'index': 1, 'previous_hash': '1', 'proof': 100, 'timestamp': 1619709208.126718, 'tx': []}], 'length': 1}}'
+[36m[2021-04-29 16:14:01 DEBUG][39m allowed tolerance is 200
+[32m[2021-04-29 16:14:01 INFO][39m Probe: nodes-are-registered
+[36m[2021-04-29 16:14:01 DEBUG][39m   => succeeded with '{'status': 201, 'headers': {'Content-Type': 'application/json', 'Content-Length': '83', 'Server': 'Werkzeug/0.16.1 Python/3.8.5', 'Date': 'Thu, 29 Apr 2021 15:14:01 GMT'}, 'body': {'message': 'New node(s) added', 'total_nodes': ['127.0.0.1:5001']}}'
+[36m[2021-04-29 16:14:01 DEBUG][39m allowed tolerance is 201
+[32m[2021-04-29 16:14:01 INFO][39m Steady state hypothesis is met!
+[32m[2021-04-29 16:14:01 INFO][39m Let's rollback...
+[32m[2021-04-29 16:14:01 INFO][39m No declared rollbacks, let's move on.
+[32m[2021-04-29 16:14:01 INFO][39m Experiment ended with status: completed
+[36m[2021-04-29 16:14:01 DEBUG][39m Cleaning up controls
+[36m[2021-04-29 16:14:01 DEBUG][39m Clearing activities cache
+[36m[2021-04-29 16:16:19 DEBUG][39m ###############################################################################
+[36m[2021-04-29 16:16:19 DEBUG][39m Running command 'run'
+[36m[2021-04-29 16:16:19 DEBUG][39m Using settings file 'C:\Users\yolan\.chaostoolkit\settings.yaml'
+[33m[2021-04-29 16:16:19 WARNING][39m 
+    There is a new version (1.9.0) of the chaostoolkit available.
+    You may upgrade by typing:
+    
+    $ pip install -U chaostoolkit
+    
+    Please review changes at https://github.com/chaostoolkit/chaostoolkit/blob/master/CHANGELOG.md
+    
+[36m[2021-04-29 16:16:19 DEBUG][39m The Chaos Toolkit settings file could not be found at 'C:\Users\yolan\.chaostoolkit\settings.yaml'.
+[36m[2021-04-29 16:16:19 DEBUG][39m Building activity cache...
+[36m[2021-04-29 16:16:19 DEBUG][39m Cached 4 activities
+[32m[2021-04-29 16:16:19 INFO][39m Validating the experiment's syntax
+[36m[2021-04-29 16:16:19 DEBUG][39m Loading configuration...
+[36m[2021-04-29 16:16:19 DEBUG][39m Loading secrets...
+[36m[2021-04-29 16:16:19 DEBUG][39m Secrets loaded
+[32m[2021-04-29 16:16:19 INFO][39m Experiment looks valid
+[36m[2021-04-29 16:16:19 DEBUG][39m Clearing activities cache
+[36m[2021-04-29 16:16:19 DEBUG][39m Building activity cache...
+[36m[2021-04-29 16:16:19 DEBUG][39m Cached 4 activities
+[32m[2021-04-29 16:16:19 INFO][39m Running experiment: Can we make a new transaction?
+[36m[2021-04-29 16:16:19 DEBUG][39m Loading configuration...
+[36m[2021-04-29 16:16:19 DEBUG][39m Loading secrets...
+[36m[2021-04-29 16:16:19 DEBUG][39m Secrets loaded
+[36m[2021-04-29 16:16:19 DEBUG][39m Initializing controls
+[32m[2021-04-29 16:16:19 INFO][39m Steady state hypothesis: Chain exists
+[32m[2021-04-29 16:16:19 INFO][39m Probe: chain-exists
+[36m[2021-04-29 16:16:19 DEBUG][39m   => succeeded with '{'status': 200, 'headers': {'Content-Type': 'application/json', 'Content-Length': '173', 'Server': 'Werkzeug/0.16.1 Python/3.8.5', 'Date': 'Thu, 29 Apr 2021 15:16:19 GMT'}, 'body': {'chain': [{'index': 1, 'previous_hash': '1', 'proof': 100, 'timestamp': 1619708953.4401147, 'tx': []}], 'length': 1}}'
+[36m[2021-04-29 16:16:19 DEBUG][39m allowed tolerance is 200
+[32m[2021-04-29 16:16:19 INFO][39m Steady state hypothesis is met!
+[32m[2021-04-29 16:16:19 INFO][39m Action: make-new-transaction
+[33m[2021-04-29 16:16:19 WARNING][39m This HTTP call returned a response with a HTTP status code above 400. This may indicate some error and not what you expected. Please have a look at the logs.
+[36m[2021-04-29 16:16:19 DEBUG][39m   => succeeded with '{'status': 404, 'headers': {'Content-Type': 'text/html', 'Content-Length': '232', 'Server': 'Werkzeug/0.16.1 Python/3.8.5', 'Date': 'Thu, 29 Apr 2021 15:16:19 GMT'}, 'body': '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">\n<title>404 Not Found</title>\n<h1>Not Found</h1>\n<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>\n'}'
+[32m[2021-04-29 16:16:19 INFO][39m Probe: check-chain
+[33m[2021-04-29 16:16:19 WARNING][39m This HTTP call returned a response with a HTTP status code above 400. This may indicate some error and not what you expected. Please have a look at the logs.
+[36m[2021-04-29 16:16:19 DEBUG][39m   => succeeded with '{'status': 500, 'headers': {'Content-Type': 'text/html', 'Content-Length': '290', 'Server': 'Werkzeug/0.16.1 Python/3.8.5', 'Date': 'Thu, 29 Apr 2021 15:16:19 GMT'}, 'body': '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">\n<title>500 Internal Server Error</title>\n<h1>Internal Server Error</h1>\n<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>\n'}'
+[32m[2021-04-29 16:16:19 INFO][39m Action: mine-block
+[33m[2021-04-29 16:16:19 WARNING][39m This HTTP call returned a response with a HTTP status code above 400. This may indicate some error and not what you expected. Please have a look at the logs.
+[36m[2021-04-29 16:16:19 DEBUG][39m   => succeeded with '{'status': 500, 'headers': {'Content-Type': 'text/html', 'Content-Length': '290', 'Server': 'Werkzeug/0.16.1 Python/3.8.5', 'Date': 'Thu, 29 Apr 2021 15:16:19 GMT'}, 'body': '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">\n<title>500 Internal Server Error</title>\n<h1>Internal Server Error</h1>\n<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>\n'}'
+[32m[2021-04-29 16:16:19 INFO][39m Probe: check-chain
+[33m[2021-04-29 16:16:19 WARNING][39m This HTTP call returned a response with a HTTP status code above 400. This may indicate some error and not what you expected. Please have a look at the logs.
+[36m[2021-04-29 16:16:19 DEBUG][39m   => succeeded with '{'status': 500, 'headers': {'Content-Type': 'text/html', 'Content-Length': '290', 'Server': 'Werkzeug/0.16.1 Python/3.8.5', 'Date': 'Thu, 29 Apr 2021 15:16:19 GMT'}, 'body': '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">\n<title>500 Internal Server Error</title>\n<h1>Internal Server Error</h1>\n<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>\n'}'
+[32m[2021-04-29 16:16:19 INFO][39m Steady state hypothesis: Chain exists
+[32m[2021-04-29 16:16:19 INFO][39m Probe: chain-exists
+[36m[2021-04-29 16:16:19 DEBUG][39m   => succeeded with '{'status': 200, 'headers': {'Content-Type': 'application/json', 'Content-Length': '173', 'Server': 'Werkzeug/0.16.1 Python/3.8.5', 'Date': 'Thu, 29 Apr 2021 15:16:19 GMT'}, 'body': {'chain': [{'index': 1, 'previous_hash': '1', 'proof': 100, 'timestamp': 1619708953.4401147, 'tx': []}], 'length': 1}}'
+[36m[2021-04-29 16:16:19 DEBUG][39m allowed tolerance is 200
+[32m[2021-04-29 16:16:19 INFO][39m Steady state hypothesis is met!
+[32m[2021-04-29 16:16:19 INFO][39m Let's rollback...
+[32m[2021-04-29 16:16:19 INFO][39m No declared rollbacks, let's move on.
+[32m[2021-04-29 16:16:19 INFO][39m Experiment ended with status: completed
+[36m[2021-04-29 16:16:19 DEBUG][39m Cleaning up controls
+[36m[2021-04-29 16:16:19 DEBUG][39m Clearing activities cache
+[36m[2021-04-29 16:16:39 DEBUG][39m ###############################################################################
+[36m[2021-04-29 16:16:39 DEBUG][39m Running command 'run'
+[36m[2021-04-29 16:16:39 DEBUG][39m Using settings file 'C:\Users\yolan\.chaostoolkit\settings.yaml'
+[33m[2021-04-29 16:16:40 WARNING][39m 
+    There is a new version (1.9.0) of the chaostoolkit available.
+    You may upgrade by typing:
+    
+    $ pip install -U chaostoolkit
+    
+    Please review changes at https://github.com/chaostoolkit/chaostoolkit/blob/master/CHANGELOG.md
+    
+[36m[2021-04-29 16:16:40 DEBUG][39m The Chaos Toolkit settings file could not be found at 'C:\Users\yolan\.chaostoolkit\settings.yaml'.
+[36m[2021-04-29 16:16:40 DEBUG][39m Building activity cache...
+[36m[2021-04-29 16:16:40 DEBUG][39m Cached 4 activities
+[32m[2021-04-29 16:16:40 INFO][39m Validating the experiment's syntax
+[36m[2021-04-29 16:16:40 DEBUG][39m Loading configuration...
+[36m[2021-04-29 16:16:40 DEBUG][39m Loading secrets...
+[36m[2021-04-29 16:16:40 DEBUG][39m Secrets loaded
+[32m[2021-04-29 16:16:40 INFO][39m Experiment looks valid
+[36m[2021-04-29 16:16:40 DEBUG][39m Clearing activities cache
+[36m[2021-04-29 16:16:40 DEBUG][39m Building activity cache...
+[36m[2021-04-29 16:16:40 DEBUG][39m Cached 4 activities
+[32m[2021-04-29 16:16:40 INFO][39m Running experiment: Can we make a new transaction?
+[36m[2021-04-29 16:16:40 DEBUG][39m Loading configuration...
+[36m[2021-04-29 16:16:40 DEBUG][39m Loading secrets...
+[36m[2021-04-29 16:16:40 DEBUG][39m Secrets loaded
+[36m[2021-04-29 16:16:40 DEBUG][39m Initializing controls
+[32m[2021-04-29 16:16:40 INFO][39m Steady state hypothesis: Chain exists
+[32m[2021-04-29 16:16:40 INFO][39m Probe: chain-exists
+[36m[2021-04-29 16:16:40 DEBUG][39m   => succeeded with '{'status': 200, 'headers': {'Content-Type': 'application/json', 'Content-Length': '173', 'Server': 'Werkzeug/0.16.1 Python/3.8.5', 'Date': 'Thu, 29 Apr 2021 15:16:40 GMT'}, 'body': {'chain': [{'index': 1, 'previous_hash': '1', 'proof': 100, 'timestamp': 1619709394.4663098, 'tx': []}], 'length': 1}}'
+[36m[2021-04-29 16:16:40 DEBUG][39m allowed tolerance is 200
+[32m[2021-04-29 16:16:40 INFO][39m Steady state hypothesis is met!
+[32m[2021-04-29 16:16:40 INFO][39m Action: make-new-transaction
+[33m[2021-04-29 16:16:40 WARNING][39m This HTTP call returned a response with a HTTP status code above 400. This may indicate some error and not what you expected. Please have a look at the logs.
+[36m[2021-04-29 16:16:40 DEBUG][39m   => succeeded with '{'status': 404, 'headers': {'Content-Type': 'text/html', 'Content-Length': '232', 'Server': 'Werkzeug/0.16.1 Python/3.8.5', 'Date': 'Thu, 29 Apr 2021 15:16:40 GMT'}, 'body': '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">\n<title>404 Not Found</title>\n<h1>Not Found</h1>\n<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>\n'}'
+[32m[2021-04-29 16:16:40 INFO][39m Probe: check-chain
+[33m[2021-04-29 16:16:40 WARNING][39m This HTTP call returned a response with a HTTP status code above 400. This may indicate some error and not what you expected. Please have a look at the logs.
+[36m[2021-04-29 16:16:40 DEBUG][39m   => succeeded with '{'status': 500, 'headers': {'Content-Type': 'text/html', 'Content-Length': '290', 'Server': 'Werkzeug/0.16.1 Python/3.8.5', 'Date': 'Thu, 29 Apr 2021 15:16:40 GMT'}, 'body': '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">\n<title>500 Internal Server Error</title>\n<h1>Internal Server Error</h1>\n<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>\n'}'
+[32m[2021-04-29 16:16:40 INFO][39m Action: mine-block
+[33m[2021-04-29 16:16:40 WARNING][39m This HTTP call returned a response with a HTTP status code above 400. This may indicate some error and not what you expected. Please have a look at the logs.
+[36m[2021-04-29 16:16:40 DEBUG][39m   => succeeded with '{'status': 500, 'headers': {'Content-Type': 'text/html', 'Content-Length': '290', 'Server': 'Werkzeug/0.16.1 Python/3.8.5', 'Date': 'Thu, 29 Apr 2021 15:16:40 GMT'}, 'body': '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">\n<title>500 Internal Server Error</title>\n<h1>Internal Server Error</h1>\n<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>\n'}'
+[32m[2021-04-29 16:16:40 INFO][39m Probe: check-chain
+[33m[2021-04-29 16:16:40 WARNING][39m This HTTP call returned a response with a HTTP status code above 400. This may indicate some error and not what you expected. Please have a look at the logs.
+[36m[2021-04-29 16:16:40 DEBUG][39m   => succeeded with '{'status': 500, 'headers': {'Content-Type': 'text/html', 'Content-Length': '290', 'Server': 'Werkzeug/0.16.1 Python/3.8.5', 'Date': 'Thu, 29 Apr 2021 15:16:40 GMT'}, 'body': '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">\n<title>500 Internal Server Error</title>\n<h1>Internal Server Error</h1>\n<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>\n'}'
+[32m[2021-04-29 16:16:40 INFO][39m Steady state hypothesis: Chain exists
+[32m[2021-04-29 16:16:40 INFO][39m Probe: chain-exists
+[36m[2021-04-29 16:16:40 DEBUG][39m   => succeeded with '{'status': 200, 'headers': {'Content-Type': 'application/json', 'Content-Length': '173', 'Server': 'Werkzeug/0.16.1 Python/3.8.5', 'Date': 'Thu, 29 Apr 2021 15:16:40 GMT'}, 'body': {'chain': [{'index': 1, 'previous_hash': '1', 'proof': 100, 'timestamp': 1619709394.4663098, 'tx': []}], 'length': 1}}'
+[36m[2021-04-29 16:16:40 DEBUG][39m allowed tolerance is 200
+[32m[2021-04-29 16:16:40 INFO][39m Steady state hypothesis is met!
+[32m[2021-04-29 16:16:40 INFO][39m Let's rollback...
+[32m[2021-04-29 16:16:40 INFO][39m No declared rollbacks, let's move on.
+[32m[2021-04-29 16:16:40 INFO][39m Experiment ended with status: completed
+[36m[2021-04-29 16:16:40 DEBUG][39m Cleaning up controls
+[36m[2021-04-29 16:16:40 DEBUG][39m Clearing activities cache
+[36m[2021-04-29 16:23:25 DEBUG][39m ###############################################################################
+[36m[2021-04-29 16:23:25 DEBUG][39m Running command 'run'
+[36m[2021-04-29 16:23:25 DEBUG][39m Using settings file 'C:\Users\yolan\.chaostoolkit\settings.yaml'
+[33m[2021-04-29 16:23:25 WARNING][39m 
+    There is a new version (1.9.0) of the chaostoolkit available.
+    You may upgrade by typing:
+    
+    $ pip install -U chaostoolkit
+    
+    Please review changes at https://github.com/chaostoolkit/chaostoolkit/blob/master/CHANGELOG.md
+    
+[36m[2021-04-29 16:23:25 DEBUG][39m The Chaos Toolkit settings file could not be found at 'C:\Users\yolan\.chaostoolkit\settings.yaml'.
+[36m[2021-04-29 16:23:25 DEBUG][39m Building activity cache...
+[36m[2021-04-29 16:23:25 DEBUG][39m Cached 4 activities
+[32m[2021-04-29 16:23:25 INFO][39m Validating the experiment's syntax
+[36m[2021-04-29 16:23:25 DEBUG][39m Loading configuration...
+[36m[2021-04-29 16:23:25 DEBUG][39m Loading secrets...
+[36m[2021-04-29 16:23:25 DEBUG][39m Secrets loaded
+[32m[2021-04-29 16:23:25 INFO][39m Experiment looks valid
+[36m[2021-04-29 16:23:25 DEBUG][39m Clearing activities cache
+[36m[2021-04-29 16:23:25 DEBUG][39m Building activity cache...
+[36m[2021-04-29 16:23:25 DEBUG][39m Cached 4 activities
+[32m[2021-04-29 16:23:25 INFO][39m Running experiment: Can we make a new transaction?
+[36m[2021-04-29 16:23:25 DEBUG][39m Loading configuration...
+[36m[2021-04-29 16:23:25 DEBUG][39m Loading secrets...
+[36m[2021-04-29 16:23:25 DEBUG][39m Secrets loaded
+[36m[2021-04-29 16:23:25 DEBUG][39m Initializing controls
+[32m[2021-04-29 16:23:25 INFO][39m Steady state hypothesis: Chain exists
+[32m[2021-04-29 16:23:25 INFO][39m Probe: chain-exists
+[36m[2021-04-29 16:23:26 DEBUG][39m   => succeeded with '{'status': 200, 'headers': {'Content-Type': 'application/json', 'Content-Length': '173', 'Server': 'Werkzeug/0.16.1 Python/3.8.5', 'Date': 'Thu, 29 Apr 2021 15:23:26 GMT'}, 'body': {'chain': [{'index': 1, 'previous_hash': '1', 'proof': 100, 'timestamp': 1619709801.2685654, 'tx': []}], 'length': 1}}'
+[36m[2021-04-29 16:23:26 DEBUG][39m allowed tolerance is 200
+[32m[2021-04-29 16:23:26 INFO][39m Steady state hypothesis is met!
+[32m[2021-04-29 16:23:26 INFO][39m Action: make-new-transaction
+[33m[2021-04-29 16:23:26 WARNING][39m This HTTP call returned a response with a HTTP status code above 400. This may indicate some error and not what you expected. Please have a look at the logs.
+[36m[2021-04-29 16:23:26 DEBUG][39m   => succeeded with '{'status': 404, 'headers': {'Content-Type': 'text/html', 'Content-Length': '232', 'Server': 'Werkzeug/0.16.1 Python/3.8.5', 'Date': 'Thu, 29 Apr 2021 15:23:26 GMT'}, 'body': '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">\n<title>404 Not Found</title>\n<h1>Not Found</h1>\n<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>\n'}'
+[32m[2021-04-29 16:23:26 INFO][39m Probe: check-chain
+[33m[2021-04-29 16:23:26 WARNING][39m This HTTP call returned a response with a HTTP status code above 400. This may indicate some error and not what you expected. Please have a look at the logs.
+[36m[2021-04-29 16:23:26 DEBUG][39m   => succeeded with '{'status': 500, 'headers': {'Content-Type': 'text/html', 'Content-Length': '290', 'Server': 'Werkzeug/0.16.1 Python/3.8.5', 'Date': 'Thu, 29 Apr 2021 15:23:26 GMT'}, 'body': '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">\n<title>500 Internal Server Error</title>\n<h1>Internal Server Error</h1>\n<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>\n'}'
+[32m[2021-04-29 16:23:26 INFO][39m Action: mine-block
+[33m[2021-04-29 16:23:26 WARNING][39m This HTTP call returned a response with a HTTP status code above 400. This may indicate some error and not what you expected. Please have a look at the logs.
+[36m[2021-04-29 16:23:26 DEBUG][39m   => succeeded with '{'status': 500, 'headers': {'Content-Type': 'text/html', 'Content-Length': '290', 'Server': 'Werkzeug/0.16.1 Python/3.8.5', 'Date': 'Thu, 29 Apr 2021 15:23:26 GMT'}, 'body': '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">\n<title>500 Internal Server Error</title>\n<h1>Internal Server Error</h1>\n<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>\n'}'
+[32m[2021-04-29 16:23:26 INFO][39m Probe: check-chain
+[33m[2021-04-29 16:23:26 WARNING][39m This HTTP call returned a response with a HTTP status code above 400. This may indicate some error and not what you expected. Please have a look at the logs.
+[36m[2021-04-29 16:23:26 DEBUG][39m   => succeeded with '{'status': 500, 'headers': {'Content-Type': 'text/html', 'Content-Length': '290', 'Server': 'Werkzeug/0.16.1 Python/3.8.5', 'Date': 'Thu, 29 Apr 2021 15:23:26 GMT'}, 'body': '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">\n<title>500 Internal Server Error</title>\n<h1>Internal Server Error</h1>\n<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>\n'}'
+[32m[2021-04-29 16:23:26 INFO][39m Steady state hypothesis: Chain exists
+[32m[2021-04-29 16:23:26 INFO][39m Probe: chain-exists
+[36m[2021-04-29 16:23:26 DEBUG][39m   => succeeded with '{'status': 200, 'headers': {'Content-Type': 'application/json', 'Content-Length': '173', 'Server': 'Werkzeug/0.16.1 Python/3.8.5', 'Date': 'Thu, 29 Apr 2021 15:23:26 GMT'}, 'body': {'chain': [{'index': 1, 'previous_hash': '1', 'proof': 100, 'timestamp': 1619709801.2685654, 'tx': []}], 'length': 1}}'
+[36m[2021-04-29 16:23:26 DEBUG][39m allowed tolerance is 200
+[32m[2021-04-29 16:23:26 INFO][39m Steady state hypothesis is met!
+[32m[2021-04-29 16:23:26 INFO][39m Let's rollback...
+[32m[2021-04-29 16:23:26 INFO][39m No declared rollbacks, let's move on.
+[32m[2021-04-29 16:23:26 INFO][39m Experiment ended with status: completed
+[36m[2021-04-29 16:23:26 DEBUG][39m Cleaning up controls
+[36m[2021-04-29 16:23:26 DEBUG][39m Clearing activities cache
+[36m[2021-04-29 16:25:21 DEBUG][39m ###############################################################################
+[36m[2021-04-29 16:25:21 DEBUG][39m Running command 'run'
+[36m[2021-04-29 16:25:21 DEBUG][39m Using settings file 'C:\Users\yolan\.chaostoolkit\settings.yaml'
+[33m[2021-04-29 16:25:21 WARNING][39m 
+    There is a new version (1.9.0) of the chaostoolkit available.
+    You may upgrade by typing:
+    
+    $ pip install -U chaostoolkit
+    
+    Please review changes at https://github.com/chaostoolkit/chaostoolkit/blob/master/CHANGELOG.md
+    
+[36m[2021-04-29 16:25:21 DEBUG][39m The Chaos Toolkit settings file could not be found at 'C:\Users\yolan\.chaostoolkit\settings.yaml'.
+[36m[2021-04-29 16:25:21 DEBUG][39m Building activity cache...
+[36m[2021-04-29 16:25:21 DEBUG][39m Cached 4 activities
+[32m[2021-04-29 16:25:21 INFO][39m Validating the experiment's syntax
+[36m[2021-04-29 16:25:21 DEBUG][39m Loading configuration...
+[36m[2021-04-29 16:25:21 DEBUG][39m Loading secrets...
+[36m[2021-04-29 16:25:21 DEBUG][39m Secrets loaded
+[32m[2021-04-29 16:25:21 INFO][39m Experiment looks valid
+[36m[2021-04-29 16:25:21 DEBUG][39m Clearing activities cache
+[36m[2021-04-29 16:25:21 DEBUG][39m Building activity cache...
+[36m[2021-04-29 16:25:21 DEBUG][39m Cached 4 activities
+[32m[2021-04-29 16:25:21 INFO][39m Running experiment: Can we make a new transaction?
+[36m[2021-04-29 16:25:21 DEBUG][39m Loading configuration...
+[36m[2021-04-29 16:25:21 DEBUG][39m Loading secrets...
+[36m[2021-04-29 16:25:21 DEBUG][39m Secrets loaded
+[36m[2021-04-29 16:25:21 DEBUG][39m Initializing controls
+[32m[2021-04-29 16:25:21 INFO][39m Steady state hypothesis: Chain exists
+[32m[2021-04-29 16:25:21 INFO][39m Probe: chain-exists
+[36m[2021-04-29 16:25:21 DEBUG][39m   => succeeded with '{'status': 200, 'headers': {'Content-Type': 'application/json', 'Content-Length': '173', 'Server': 'Werkzeug/0.16.1 Python/3.8.5', 'Date': 'Thu, 29 Apr 2021 15:25:21 GMT'}, 'body': {'chain': [{'index': 1, 'previous_hash': '1', 'proof': 100, 'timestamp': 1619709801.2685654, 'tx': []}], 'length': 1}}'
+[36m[2021-04-29 16:25:21 DEBUG][39m allowed tolerance is 200
+[32m[2021-04-29 16:25:21 INFO][39m Steady state hypothesis is met!
+[32m[2021-04-29 16:25:21 INFO][39m Action: make-new-transaction
+[33m[2021-04-29 16:25:21 WARNING][39m This HTTP call returned a response with a HTTP status code above 400. This may indicate some error and not what you expected. Please have a look at the logs.
+[36m[2021-04-29 16:25:21 DEBUG][39m   => succeeded with '{'status': 404, 'headers': {'Content-Type': 'text/html', 'Content-Length': '232', 'Server': 'Werkzeug/0.16.1 Python/3.8.5', 'Date': 'Thu, 29 Apr 2021 15:25:21 GMT'}, 'body': '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">\n<title>404 Not Found</title>\n<h1>Not Found</h1>\n<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>\n'}'
+[32m[2021-04-29 16:25:21 INFO][39m Probe: check-chain
+[33m[2021-04-29 16:25:21 WARNING][39m This HTTP call returned a response with a HTTP status code above 400. This may indicate some error and not what you expected. Please have a look at the logs.
+[36m[2021-04-29 16:25:21 DEBUG][39m   => succeeded with '{'status': 500, 'headers': {'Content-Type': 'text/html', 'Content-Length': '290', 'Server': 'Werkzeug/0.16.1 Python/3.8.5', 'Date': 'Thu, 29 Apr 2021 15:25:21 GMT'}, 'body': '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">\n<title>500 Internal Server Error</title>\n<h1>Internal Server Error</h1>\n<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>\n'}'
+[32m[2021-04-29 16:25:21 INFO][39m Action: mine-block
+[33m[2021-04-29 16:25:21 WARNING][39m This HTTP call returned a response with a HTTP status code above 400. This may indicate some error and not what you expected. Please have a look at the logs.
+[36m[2021-04-29 16:25:21 DEBUG][39m   => succeeded with '{'status': 500, 'headers': {'Content-Type': 'text/html', 'Content-Length': '290', 'Server': 'Werkzeug/0.16.1 Python/3.8.5', 'Date': 'Thu, 29 Apr 2021 15:25:21 GMT'}, 'body': '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">\n<title>500 Internal Server Error</title>\n<h1>Internal Server Error</h1>\n<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>\n'}'
+[32m[2021-04-29 16:25:21 INFO][39m Probe: check-chain
+[33m[2021-04-29 16:25:22 WARNING][39m This HTTP call returned a response with a HTTP status code above 400. This may indicate some error and not what you expected. Please have a look at the logs.
+[36m[2021-04-29 16:25:22 DEBUG][39m   => succeeded with '{'status': 500, 'headers': {'Content-Type': 'text/html', 'Content-Length': '290', 'Server': 'Werkzeug/0.16.1 Python/3.8.5', 'Date': 'Thu, 29 Apr 2021 15:25:22 GMT'}, 'body': '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">\n<title>500 Internal Server Error</title>\n<h1>Internal Server Error</h1>\n<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>\n'}'
+[32m[2021-04-29 16:25:22 INFO][39m Steady state hypothesis: Chain exists
+[32m[2021-04-29 16:25:22 INFO][39m Probe: chain-exists
+[36m[2021-04-29 16:25:22 DEBUG][39m   => succeeded with '{'status': 200, 'headers': {'Content-Type': 'application/json', 'Content-Length': '173', 'Server': 'Werkzeug/0.16.1 Python/3.8.5', 'Date': 'Thu, 29 Apr 2021 15:25:22 GMT'}, 'body': {'chain': [{'index': 1, 'previous_hash': '1', 'proof': 100, 'timestamp': 1619709801.2685654, 'tx': []}], 'length': 1}}'
+[36m[2021-04-29 16:25:22 DEBUG][39m allowed tolerance is 200
+[32m[2021-04-29 16:25:22 INFO][39m Steady state hypothesis is met!
+[32m[2021-04-29 16:25:22 INFO][39m Let's rollback...
+[32m[2021-04-29 16:25:22 INFO][39m No declared rollbacks, let's move on.
+[32m[2021-04-29 16:25:22 INFO][39m Experiment ended with status: completed
+[36m[2021-04-29 16:25:22 DEBUG][39m Cleaning up controls
+[36m[2021-04-29 16:25:22 DEBUG][39m Clearing activities cache
+[36m[2021-04-29 16:26:13 DEBUG] [cli:73][39m ###############################################################################
+[36m[2021-04-29 16:26:13 DEBUG] [cli:74][39m Running command 'run'
+[36m[2021-04-29 16:26:13 DEBUG] [cli:78][39m Using settings file 'C:\Users\yolan\.chaostoolkit\settings.yaml'
+[36m[2021-04-29 16:26:13 DEBUG] [settings:26][39m The Chaos Toolkit settings file could not be found at 'C:\Users\yolan\.chaostoolkit\settings.yaml'.
+[36m[2021-04-29 16:26:13 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-04-29 16:26:13 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-04-29 16:26:13 DEBUG] [caching:25][39m Building activity cache...
+[36m[2021-04-29 16:26:13 DEBUG] [caching:35][39m Cached 4 activities
+[32m[2021-04-29 16:26:13 INFO] [experiment:47][39m Validating the experiment's syntax
+[36m[2021-04-29 16:26:13 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2021-04-29 16:26:13 DEBUG] [secret:75][39m Loading secrets...
+[36m[2021-04-29 16:26:13 DEBUG] [secret:92][39m Secrets loaded
+[32m[2021-04-29 16:26:13 INFO] [experiment:96][39m Experiment looks valid
+[36m[2021-04-29 16:26:13 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2021-04-29 16:26:13 DEBUG] [caching:25][39m Building activity cache...
+[36m[2021-04-29 16:26:13 DEBUG] [caching:35][39m Cached 4 activities
+[36m[2021-04-29 16:26:13 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2021-04-29 16:26:13 DEBUG] [secret:75][39m Loading secrets...
+[36m[2021-04-29 16:26:13 DEBUG] [secret:92][39m Secrets loaded
+[36m[2021-04-29 16:26:13 DEBUG] [exit:89][39m System 'Windows-10-10.0.19041-SP0' does not expose SIGUSR signals
+[32m[2021-04-29 16:26:13 INFO] [run:323][39m Running experiment: Can we make a new transaction?
+[36m[2021-04-29 16:26:13 DEBUG] [__init__:39][39m Initializing controls
+[32m[2021-04-29 16:26:13 INFO] [run:342][39m Steady-state strategy: default
+[32m[2021-04-29 16:26:13 INFO] [run:345][39m Rollbacks strategy: default
+[36m[2021-04-29 16:26:13 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[36m[2021-04-29 16:26:13 DEBUG] [run:466][39m Running steady-state hypothesis before the method
+[32m[2021-04-29 16:26:13 INFO] [hypothesis:183][39m Steady state hypothesis: Chain exists
+[36m[2021-04-29 16:26:13 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2021-04-29 16:26:13 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-04-29 16:26:13 INFO] [activity:161][39m Probe: chain-exists
+[36m[2021-04-29 16:26:13 DEBUG] [activity:180][39m   => succeeded with '{'status': 200, 'headers': {'Content-Type': 'application/json', 'Content-Length': '173', 'Server': 'Werkzeug/0.16.1 Python/3.8.5', 'Date': 'Thu, 29 Apr 2021 15:26:13 GMT'}, 'body': {'chain': [{'index': 1, 'previous_hash': '1', 'proof': 100, 'timestamp': 1619709801.2685654, 'tx': []}], 'length': 1}}'
+[36m[2021-04-29 16:26:13 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-04-29 16:26:13 DEBUG] [hypothesis:211][39m allowed tolerance is 200
+[32m[2021-04-29 16:26:13 INFO] [hypothesis:221][39m Steady state hypothesis is met!
+[36m[2021-04-29 16:26:13 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[32m[2021-04-29 16:26:13 INFO] [run:553][39m Playing your experiment's method now...
+[36m[2021-04-29 16:26:13 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[36m[2021-04-29 16:26:13 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-04-29 16:26:13 INFO] [activity:161][39m Action: make-new-transaction
+[33m[2021-04-29 16:26:13 WARNING] [http:75][39m This HTTP call returned a response with a HTTP status code above 400. This may indicate some error and not what you expected. Please have a look at the logs.
+[36m[2021-04-29 16:26:13 DEBUG] [activity:180][39m   => succeeded with '{'status': 404, 'headers': {'Content-Type': 'text/html', 'Content-Length': '232', 'Server': 'Werkzeug/0.16.1 Python/3.8.5', 'Date': 'Thu, 29 Apr 2021 15:26:13 GMT'}, 'body': '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">\n<title>404 Not Found</title>\n<h1>Not Found</h1>\n<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>\n'}'
+[36m[2021-04-29 16:26:13 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-04-29 16:26:13 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-04-29 16:26:13 INFO] [activity:161][39m Probe: check-chain
+[33m[2021-04-29 16:26:14 WARNING] [http:75][39m This HTTP call returned a response with a HTTP status code above 400. This may indicate some error and not what you expected. Please have a look at the logs.
+[36m[2021-04-29 16:26:14 DEBUG] [activity:180][39m   => succeeded with '{'status': 500, 'headers': {'Content-Type': 'text/html', 'Content-Length': '290', 'Server': 'Werkzeug/0.16.1 Python/3.8.5', 'Date': 'Thu, 29 Apr 2021 15:26:13 GMT'}, 'body': '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">\n<title>500 Internal Server Error</title>\n<h1>Internal Server Error</h1>\n<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>\n'}'
+[36m[2021-04-29 16:26:14 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-04-29 16:26:14 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-04-29 16:26:14 INFO] [activity:161][39m Action: mine-block
+[33m[2021-04-29 16:26:14 WARNING] [http:75][39m This HTTP call returned a response with a HTTP status code above 400. This may indicate some error and not what you expected. Please have a look at the logs.
+[36m[2021-04-29 16:26:14 DEBUG] [activity:180][39m   => succeeded with '{'status': 500, 'headers': {'Content-Type': 'text/html', 'Content-Length': '290', 'Server': 'Werkzeug/0.16.1 Python/3.8.5', 'Date': 'Thu, 29 Apr 2021 15:26:14 GMT'}, 'body': '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">\n<title>500 Internal Server Error</title>\n<h1>Internal Server Error</h1>\n<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>\n'}'
+[36m[2021-04-29 16:26:14 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-04-29 16:26:14 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-04-29 16:26:14 INFO] [activity:161][39m Probe: check-chain
+[33m[2021-04-29 16:26:14 WARNING] [http:75][39m This HTTP call returned a response with a HTTP status code above 400. This may indicate some error and not what you expected. Please have a look at the logs.
+[36m[2021-04-29 16:26:14 DEBUG] [activity:180][39m   => succeeded with '{'status': 500, 'headers': {'Content-Type': 'text/html', 'Content-Length': '290', 'Server': 'Werkzeug/0.16.1 Python/3.8.5', 'Date': 'Thu, 29 Apr 2021 15:26:14 GMT'}, 'body': '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">\n<title>500 Internal Server Error</title>\n<h1>Internal Server Error</h1>\n<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>\n'}'
+[36m[2021-04-29 16:26:14 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-04-29 16:26:14 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[36m[2021-04-29 16:26:14 DEBUG] [run:496][39m Running steady-state hypothesis after the method
+[32m[2021-04-29 16:26:14 INFO] [hypothesis:183][39m Steady state hypothesis: Chain exists
+[36m[2021-04-29 16:26:14 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2021-04-29 16:26:14 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-04-29 16:26:14 INFO] [activity:161][39m Probe: chain-exists
+[36m[2021-04-29 16:26:14 DEBUG] [activity:180][39m   => succeeded with '{'status': 200, 'headers': {'Content-Type': 'application/json', 'Content-Length': '173', 'Server': 'Werkzeug/0.16.1 Python/3.8.5', 'Date': 'Thu, 29 Apr 2021 15:26:14 GMT'}, 'body': {'chain': [{'index': 1, 'previous_hash': '1', 'proof': 100, 'timestamp': 1619709801.2685654, 'tx': []}], 'length': 1}}'
+[36m[2021-04-29 16:26:14 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-04-29 16:26:14 DEBUG] [hypothesis:211][39m allowed tolerance is 200
+[32m[2021-04-29 16:26:14 INFO] [hypothesis:221][39m Steady state hypothesis is met!
+[36m[2021-04-29 16:26:14 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[32m[2021-04-29 16:26:14 INFO] [run:809][39m Let's rollback...
+[36m[2021-04-29 16:26:14 DEBUG] [__init__:355][39m No controls to apply on 'rollback'
+[32m[2021-04-29 16:26:14 INFO] [rollback:25][39m No declared rollbacks, let's move on.
+[36m[2021-04-29 16:26:14 DEBUG] [__init__:355][39m No controls to apply on 'rollback'
+[32m[2021-04-29 16:26:14 INFO] [run:421][39m Experiment ended with status: completed
+[36m[2021-04-29 16:26:14 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[36m[2021-04-29 16:26:14 DEBUG] [__init__:72][39m Cleaning up controls
+[36m[2021-04-29 16:26:14 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2021-04-29 16:31:51 DEBUG] [cli:73][39m ###############################################################################
+[36m[2021-04-29 16:31:51 DEBUG] [cli:74][39m Running command 'run'
+[36m[2021-04-29 16:31:51 DEBUG] [cli:78][39m Using settings file 'C:\Users\yolan\.chaostoolkit\settings.yaml'
+[36m[2021-04-29 16:31:51 DEBUG] [settings:26][39m The Chaos Toolkit settings file could not be found at 'C:\Users\yolan\.chaostoolkit\settings.yaml'.
+[36m[2021-04-29 16:31:51 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-04-29 16:31:51 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-04-29 16:31:51 DEBUG] [caching:25][39m Building activity cache...
+[36m[2021-04-29 16:31:51 DEBUG] [caching:35][39m Cached 4 activities
+[32m[2021-04-29 16:31:51 INFO] [experiment:47][39m Validating the experiment's syntax
+[36m[2021-04-29 16:31:51 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2021-04-29 16:31:51 DEBUG] [secret:75][39m Loading secrets...
+[36m[2021-04-29 16:31:51 DEBUG] [secret:92][39m Secrets loaded
+[32m[2021-04-29 16:31:51 INFO] [experiment:96][39m Experiment looks valid
+[36m[2021-04-29 16:31:51 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2021-04-29 16:31:51 DEBUG] [caching:25][39m Building activity cache...
+[36m[2021-04-29 16:31:51 DEBUG] [caching:35][39m Cached 4 activities
+[36m[2021-04-29 16:31:51 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2021-04-29 16:31:51 DEBUG] [secret:75][39m Loading secrets...
+[36m[2021-04-29 16:31:51 DEBUG] [secret:92][39m Secrets loaded
+[36m[2021-04-29 16:31:51 DEBUG] [exit:89][39m System 'Windows-10-10.0.19041-SP0' does not expose SIGUSR signals
+[32m[2021-04-29 16:31:51 INFO] [run:323][39m Running experiment: Can we make a new transaction?
+[36m[2021-04-29 16:31:51 DEBUG] [__init__:39][39m Initializing controls
+[32m[2021-04-29 16:31:51 INFO] [run:342][39m Steady-state strategy: default
+[32m[2021-04-29 16:31:51 INFO] [run:345][39m Rollbacks strategy: default
+[36m[2021-04-29 16:31:51 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[36m[2021-04-29 16:31:51 DEBUG] [run:466][39m Running steady-state hypothesis before the method
+[32m[2021-04-29 16:31:51 INFO] [hypothesis:183][39m Steady state hypothesis: Chain exists
+[36m[2021-04-29 16:31:51 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2021-04-29 16:31:51 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-04-29 16:31:51 INFO] [activity:161][39m Probe: chain-exists
+[36m[2021-04-29 16:31:51 DEBUG] [activity:180][39m   => succeeded with '{'status': 200, 'headers': {'Content-Type': 'application/json', 'Content-Length': '172', 'Server': 'Werkzeug/0.16.1 Python/3.8.5', 'Date': 'Thu, 29 Apr 2021 15:31:51 GMT'}, 'body': {'chain': [{'index': 1, 'previous_hash': '1', 'proof': 100, 'timestamp': 1619710306.157695, 'tx': []}], 'length': 1}}'
+[36m[2021-04-29 16:31:51 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-04-29 16:31:51 DEBUG] [hypothesis:211][39m allowed tolerance is 200
+[32m[2021-04-29 16:31:51 INFO] [hypothesis:221][39m Steady state hypothesis is met!
+[36m[2021-04-29 16:31:51 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[32m[2021-04-29 16:31:51 INFO] [run:553][39m Playing your experiment's method now...
+[36m[2021-04-29 16:31:51 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[36m[2021-04-29 16:31:51 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-04-29 16:31:51 INFO] [activity:161][39m Action: make-new-transaction
+[33m[2021-04-29 16:31:51 WARNING] [http:75][39m This HTTP call returned a response with a HTTP status code above 400. This may indicate some error and not what you expected. Please have a look at the logs.
+[36m[2021-04-29 16:31:51 DEBUG] [activity:180][39m   => succeeded with '{'status': 404, 'headers': {'Content-Type': 'text/html', 'Content-Length': '232', 'Server': 'Werkzeug/0.16.1 Python/3.8.5', 'Date': 'Thu, 29 Apr 2021 15:31:51 GMT'}, 'body': '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">\n<title>404 Not Found</title>\n<h1>Not Found</h1>\n<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>\n'}'
+[36m[2021-04-29 16:31:51 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-04-29 16:31:51 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-04-29 16:31:51 INFO] [activity:161][39m Probe: check-chain
+[36m[2021-04-29 16:31:52 DEBUG] [activity:180][39m   => succeeded with '{'status': 200, 'headers': {'Content-Type': 'application/json', 'Content-Length': '285', 'Server': 'Werkzeug/0.16.1 Python/3.8.5', 'Date': 'Thu, 29 Apr 2021 15:31:52 GMT'}, 'body': {'index': 2, 'message': 'New block was forged', 'previous_hash': '7c578e09b8dd650214899cdf6edf535bfc651c7cf85359e3ee987b43af3b69c7', 'proof': 42104, 'tx': [{'amount': 1, 'receiver': '5d8bf7ea56a64275b71d6486977e84b3', 'sender': '0'}]}}'
+[36m[2021-04-29 16:31:52 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-04-29 16:31:52 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-04-29 16:31:52 INFO] [activity:161][39m Action: mine-block
+[36m[2021-04-29 16:31:52 DEBUG] [activity:180][39m   => succeeded with '{'status': 200, 'headers': {'Content-Type': 'application/json', 'Content-Length': '285', 'Server': 'Werkzeug/0.16.1 Python/3.8.5', 'Date': 'Thu, 29 Apr 2021 15:31:52 GMT'}, 'body': {'index': 3, 'message': 'New block was forged', 'previous_hash': '1756a892079c3fe0238186d2642825b3ba6ad9da8ab7d97df12d8a3b3d915159', 'proof': 95081, 'tx': [{'amount': 1, 'receiver': '5d8bf7ea56a64275b71d6486977e84b3', 'sender': '0'}]}}'
+[36m[2021-04-29 16:31:52 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-04-29 16:31:52 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-04-29 16:31:52 INFO] [activity:161][39m Probe: check-chain
+[36m[2021-04-29 16:31:52 DEBUG] [activity:180][39m   => succeeded with '{'status': 200, 'headers': {'Content-Type': 'application/json', 'Content-Length': '285', 'Server': 'Werkzeug/0.16.1 Python/3.8.5', 'Date': 'Thu, 29 Apr 2021 15:31:52 GMT'}, 'body': {'index': 4, 'message': 'New block was forged', 'previous_hash': '312a970b5021f42f78c5f86da8f8db5d55b963402b1cfc4378299a810e7308ae', 'proof': 75921, 'tx': [{'amount': 1, 'receiver': '5d8bf7ea56a64275b71d6486977e84b3', 'sender': '0'}]}}'
+[36m[2021-04-29 16:31:52 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-04-29 16:31:52 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[36m[2021-04-29 16:31:52 DEBUG] [run:496][39m Running steady-state hypothesis after the method
+[32m[2021-04-29 16:31:52 INFO] [hypothesis:183][39m Steady state hypothesis: Chain exists
+[36m[2021-04-29 16:31:52 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2021-04-29 16:31:52 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-04-29 16:31:52 INFO] [activity:161][39m Probe: chain-exists
+[36m[2021-04-29 16:31:52 DEBUG] [activity:180][39m   => succeeded with '{'status': 200, 'headers': {'Content-Type': 'application/json', 'Content-Length': '1182', 'Server': 'Werkzeug/0.16.1 Python/3.8.5', 'Date': 'Thu, 29 Apr 2021 15:31:52 GMT'}, 'body': {'chain': [{'index': 1, 'previous_hash': '1', 'proof': 100, 'timestamp': 1619710306.157695, 'tx': []}, {'index': 2, 'previous_hash': '7c578e09b8dd650214899cdf6edf535bfc651c7cf85359e3ee987b43af3b69c7', 'proof': 42104, 'timestamp': 1619710312.0285532, 'tx': [{'amount': 1, 'receiver': '5d8bf7ea56a64275b71d6486977e84b3', 'sender': '0'}]}, {'index': 3, 'previous_hash': '1756a892079c3fe0238186d2642825b3ba6ad9da8ab7d97df12d8a3b3d915159', 'proof': 95081, 'timestamp': 1619710312.186836, 'tx': [{'amount': 1, 'receiver': '5d8bf7ea56a64275b71d6486977e84b3', 'sender': '0'}]}, {'index': 4, 'previous_hash': '312a970b5021f42f78c5f86da8f8db5d55b963402b1cfc4378299a810e7308ae', 'proof': 75921, 'timestamp': 1619710312.2978427, 'tx': [{'amount': 1, 'receiver': '5d8bf7ea56a64275b71d6486977e84b3', 'sender': '0'}]}], 'length': 4}}'
+[36m[2021-04-29 16:31:52 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-04-29 16:31:52 DEBUG] [hypothesis:211][39m allowed tolerance is 200
+[32m[2021-04-29 16:31:52 INFO] [hypothesis:221][39m Steady state hypothesis is met!
+[36m[2021-04-29 16:31:52 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[32m[2021-04-29 16:31:52 INFO] [run:809][39m Let's rollback...
+[36m[2021-04-29 16:31:52 DEBUG] [__init__:355][39m No controls to apply on 'rollback'
+[32m[2021-04-29 16:31:52 INFO] [rollback:25][39m No declared rollbacks, let's move on.
+[36m[2021-04-29 16:31:52 DEBUG] [__init__:355][39m No controls to apply on 'rollback'
+[32m[2021-04-29 16:31:52 INFO] [run:421][39m Experiment ended with status: completed
+[36m[2021-04-29 16:31:52 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[36m[2021-04-29 16:31:52 DEBUG] [__init__:72][39m Cleaning up controls
+[36m[2021-04-29 16:31:52 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2021-04-29 16:37:08 DEBUG] [cli:73][39m ###############################################################################
+[36m[2021-04-29 16:37:08 DEBUG] [cli:74][39m Running command 'run'
+[36m[2021-04-29 16:37:08 DEBUG] [cli:78][39m Using settings file 'C:\Users\yolan\.chaostoolkit\settings.yaml'
+[36m[2021-04-29 16:37:09 DEBUG] [settings:26][39m The Chaos Toolkit settings file could not be found at 'C:\Users\yolan\.chaostoolkit\settings.yaml'.
+[36m[2021-04-29 16:37:09 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-04-29 16:37:09 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-04-29 16:37:09 DEBUG] [caching:25][39m Building activity cache...
+[36m[2021-04-29 16:37:09 DEBUG] [caching:35][39m Cached 4 activities
+[32m[2021-04-29 16:37:09 INFO] [experiment:47][39m Validating the experiment's syntax
+[36m[2021-04-29 16:37:09 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2021-04-29 16:37:09 DEBUG] [secret:75][39m Loading secrets...
+[36m[2021-04-29 16:37:09 DEBUG] [secret:92][39m Secrets loaded
+[32m[2021-04-29 16:37:09 INFO] [experiment:96][39m Experiment looks valid
+[36m[2021-04-29 16:37:09 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2021-04-29 16:37:09 DEBUG] [caching:25][39m Building activity cache...
+[36m[2021-04-29 16:37:09 DEBUG] [caching:35][39m Cached 4 activities
+[36m[2021-04-29 16:37:09 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2021-04-29 16:37:09 DEBUG] [secret:75][39m Loading secrets...
+[36m[2021-04-29 16:37:09 DEBUG] [secret:92][39m Secrets loaded
+[36m[2021-04-29 16:37:09 DEBUG] [exit:89][39m System 'Windows-10-10.0.19041-SP0' does not expose SIGUSR signals
+[32m[2021-04-29 16:37:09 INFO] [run:323][39m Running experiment: Can we make a new transaction?
+[36m[2021-04-29 16:37:09 DEBUG] [__init__:39][39m Initializing controls
+[32m[2021-04-29 16:37:09 INFO] [run:342][39m Steady-state strategy: default
+[32m[2021-04-29 16:37:09 INFO] [run:345][39m Rollbacks strategy: default
+[36m[2021-04-29 16:37:09 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[36m[2021-04-29 16:37:09 DEBUG] [run:466][39m Running steady-state hypothesis before the method
+[32m[2021-04-29 16:37:09 INFO] [hypothesis:183][39m Steady state hypothesis: Chain exists
+[36m[2021-04-29 16:37:09 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2021-04-29 16:37:09 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-04-29 16:37:09 INFO] [activity:161][39m Probe: chain-exists
+[36m[2021-04-29 16:37:09 DEBUG] [activity:180][39m   => succeeded with '{'status': 200, 'headers': {'Content-Type': 'application/json', 'Content-Length': '173', 'Server': 'Werkzeug/0.16.1 Python/3.8.5', 'Date': 'Thu, 29 Apr 2021 15:37:09 GMT'}, 'body': {'chain': [{'index': 1, 'previous_hash': '1', 'proof': 100, 'timestamp': 1619710625.9766283, 'tx': []}], 'length': 1}}'
+[36m[2021-04-29 16:37:09 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-04-29 16:37:09 DEBUG] [hypothesis:211][39m allowed tolerance is 200
+[32m[2021-04-29 16:37:09 INFO] [hypothesis:221][39m Steady state hypothesis is met!
+[36m[2021-04-29 16:37:09 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[32m[2021-04-29 16:37:09 INFO] [run:553][39m Playing your experiment's method now...
+[36m[2021-04-29 16:37:09 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[36m[2021-04-29 16:37:09 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-04-29 16:37:09 INFO] [activity:161][39m Action: make-new-transaction
+[33m[2021-04-29 16:37:09 WARNING] [http:75][39m This HTTP call returned a response with a HTTP status code above 400. This may indicate some error and not what you expected. Please have a look at the logs.
+[36m[2021-04-29 16:37:09 DEBUG] [activity:180][39m   => succeeded with '{'status': 400, 'headers': {'Content-Type': 'text/html; charset=utf-8', 'Content-Length': '14', 'Server': 'Werkzeug/0.16.1 Python/3.8.5', 'Date': 'Thu, 29 Apr 2021 15:37:09 GMT'}, 'body': 'Missing values'}'
+[36m[2021-04-29 16:37:09 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-04-29 16:37:09 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-04-29 16:37:09 INFO] [activity:161][39m Probe: check-chain
+[36m[2021-04-29 16:37:10 DEBUG] [activity:180][39m   => succeeded with '{'status': 200, 'headers': {'Content-Type': 'application/json', 'Content-Length': '286', 'Server': 'Werkzeug/0.16.1 Python/3.8.5', 'Date': 'Thu, 29 Apr 2021 15:37:10 GMT'}, 'body': {'index': 2, 'message': 'New block was forged', 'previous_hash': '3b0ed575b8e5e8c7440eb2a9db36fd0cab6db09744916b628ac8754a770075a9', 'proof': 163662, 'tx': [{'amount': 1, 'receiver': '8fb1a1d7a34749acbe25aa3910dbe236', 'sender': '0'}]}}'
+[36m[2021-04-29 16:37:10 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-04-29 16:37:10 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-04-29 16:37:10 INFO] [activity:161][39m Action: mine-block
+[36m[2021-04-29 16:37:10 DEBUG] [activity:180][39m   => succeeded with '{'status': 200, 'headers': {'Content-Type': 'application/json', 'Content-Length': '284', 'Server': 'Werkzeug/0.16.1 Python/3.8.5', 'Date': 'Thu, 29 Apr 2021 15:37:10 GMT'}, 'body': {'index': 3, 'message': 'New block was forged', 'previous_hash': 'c6c059c8aa17586e1c09dc7773c31d9524471ee7a7c4c6fe3222f154670e7d22', 'proof': 8999, 'tx': [{'amount': 1, 'receiver': '8fb1a1d7a34749acbe25aa3910dbe236', 'sender': '0'}]}}'
+[36m[2021-04-29 16:37:10 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-04-29 16:37:10 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-04-29 16:37:10 INFO] [activity:161][39m Probe: check-chain
+[36m[2021-04-29 16:37:10 DEBUG] [activity:180][39m   => succeeded with '{'status': 200, 'headers': {'Content-Type': 'application/json', 'Content-Length': '285', 'Server': 'Werkzeug/0.16.1 Python/3.8.5', 'Date': 'Thu, 29 Apr 2021 15:37:10 GMT'}, 'body': {'index': 4, 'message': 'New block was forged', 'previous_hash': 'bc4393c7588cd1a837003ef257bce9f80f9e6e6d88613c059e46fcfe532399eb', 'proof': 20691, 'tx': [{'amount': 1, 'receiver': '8fb1a1d7a34749acbe25aa3910dbe236', 'sender': '0'}]}}'
+[36m[2021-04-29 16:37:10 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-04-29 16:37:10 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[36m[2021-04-29 16:37:10 DEBUG] [run:496][39m Running steady-state hypothesis after the method
+[32m[2021-04-29 16:37:10 INFO] [hypothesis:183][39m Steady state hypothesis: Chain exists
+[36m[2021-04-29 16:37:10 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2021-04-29 16:37:10 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-04-29 16:37:10 INFO] [activity:161][39m Probe: chain-exists
+[36m[2021-04-29 16:37:10 DEBUG] [activity:180][39m   => succeeded with '{'status': 200, 'headers': {'Content-Type': 'application/json', 'Content-Length': '1181', 'Server': 'Werkzeug/0.16.1 Python/3.8.5', 'Date': 'Thu, 29 Apr 2021 15:37:10 GMT'}, 'body': {'chain': [{'index': 1, 'previous_hash': '1', 'proof': 100, 'timestamp': 1619710625.9766283, 'tx': []}, {'index': 2, 'previous_hash': '3b0ed575b8e5e8c7440eb2a9db36fd0cab6db09744916b628ac8754a770075a9', 'proof': 163662, 'timestamp': 1619710630.190285, 'tx': [{'amount': 1, 'receiver': '8fb1a1d7a34749acbe25aa3910dbe236', 'sender': '0'}]}, {'index': 3, 'previous_hash': 'c6c059c8aa17586e1c09dc7773c31d9524471ee7a7c4c6fe3222f154670e7d22', 'proof': 8999, 'timestamp': 1619710630.217361, 'tx': [{'amount': 1, 'receiver': '8fb1a1d7a34749acbe25aa3910dbe236', 'sender': '0'}]}, {'index': 4, 'previous_hash': 'bc4393c7588cd1a837003ef257bce9f80f9e6e6d88613c059e46fcfe532399eb', 'proof': 20691, 'timestamp': 1619710630.250831, 'tx': [{'amount': 1, 'receiver': '8fb1a1d7a34749acbe25aa3910dbe236', 'sender': '0'}]}], 'length': 4}}'
+[36m[2021-04-29 16:37:10 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-04-29 16:37:10 DEBUG] [hypothesis:211][39m allowed tolerance is 200
+[32m[2021-04-29 16:37:10 INFO] [hypothesis:221][39m Steady state hypothesis is met!
+[36m[2021-04-29 16:37:10 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[32m[2021-04-29 16:37:10 INFO] [run:809][39m Let's rollback...
+[36m[2021-04-29 16:37:10 DEBUG] [__init__:355][39m No controls to apply on 'rollback'
+[32m[2021-04-29 16:37:10 INFO] [rollback:25][39m No declared rollbacks, let's move on.
+[36m[2021-04-29 16:37:10 DEBUG] [__init__:355][39m No controls to apply on 'rollback'
+[32m[2021-04-29 16:37:10 INFO] [run:421][39m Experiment ended with status: completed
+[36m[2021-04-29 16:37:10 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[36m[2021-04-29 16:37:10 DEBUG] [__init__:72][39m Cleaning up controls
+[36m[2021-04-29 16:37:10 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2021-04-29 16:38:18 DEBUG] [cli:73][39m ###############################################################################
+[36m[2021-04-29 16:38:18 DEBUG] [cli:74][39m Running command 'run'
+[36m[2021-04-29 16:38:18 DEBUG] [cli:78][39m Using settings file 'C:\Users\yolan\.chaostoolkit\settings.yaml'
+[36m[2021-04-29 16:38:19 DEBUG] [settings:26][39m The Chaos Toolkit settings file could not be found at 'C:\Users\yolan\.chaostoolkit\settings.yaml'.
+[36m[2021-04-29 16:38:19 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-04-29 16:38:19 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-04-29 16:38:19 DEBUG] [caching:25][39m Building activity cache...
+[36m[2021-04-29 16:38:19 DEBUG] [caching:35][39m Cached 4 activities
+[32m[2021-04-29 16:38:19 INFO] [experiment:47][39m Validating the experiment's syntax
+[36m[2021-04-29 16:38:19 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2021-04-29 16:38:19 DEBUG] [secret:75][39m Loading secrets...
+[36m[2021-04-29 16:38:19 DEBUG] [secret:92][39m Secrets loaded
+[32m[2021-04-29 16:38:19 INFO] [experiment:96][39m Experiment looks valid
+[36m[2021-04-29 16:38:19 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2021-04-29 16:38:19 DEBUG] [caching:25][39m Building activity cache...
+[36m[2021-04-29 16:38:19 DEBUG] [caching:35][39m Cached 4 activities
+[36m[2021-04-29 16:38:19 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2021-04-29 16:38:19 DEBUG] [secret:75][39m Loading secrets...
+[36m[2021-04-29 16:38:19 DEBUG] [secret:92][39m Secrets loaded
+[36m[2021-04-29 16:38:19 DEBUG] [exit:89][39m System 'Windows-10-10.0.19041-SP0' does not expose SIGUSR signals
+[32m[2021-04-29 16:38:19 INFO] [run:323][39m Running experiment: Can we make a new transaction?
+[36m[2021-04-29 16:38:19 DEBUG] [__init__:39][39m Initializing controls
+[32m[2021-04-29 16:38:19 INFO] [run:342][39m Steady-state strategy: default
+[32m[2021-04-29 16:38:19 INFO] [run:345][39m Rollbacks strategy: default
+[36m[2021-04-29 16:38:19 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[36m[2021-04-29 16:38:19 DEBUG] [run:466][39m Running steady-state hypothesis before the method
+[32m[2021-04-29 16:38:19 INFO] [hypothesis:183][39m Steady state hypothesis: Chain exists
+[36m[2021-04-29 16:38:19 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2021-04-29 16:38:19 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-04-29 16:38:19 INFO] [activity:161][39m Probe: chain-exists
+[36m[2021-04-29 16:38:19 DEBUG] [activity:180][39m   => succeeded with '{'status': 200, 'headers': {'Content-Type': 'application/json', 'Content-Length': '173', 'Server': 'Werkzeug/0.16.1 Python/3.8.5', 'Date': 'Thu, 29 Apr 2021 15:38:19 GMT'}, 'body': {'chain': [{'index': 1, 'previous_hash': '1', 'proof': 100, 'timestamp': 1619710696.7310731, 'tx': []}], 'length': 1}}'
+[36m[2021-04-29 16:38:19 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-04-29 16:38:19 DEBUG] [hypothesis:211][39m allowed tolerance is 200
+[32m[2021-04-29 16:38:19 INFO] [hypothesis:221][39m Steady state hypothesis is met!
+[36m[2021-04-29 16:38:19 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[32m[2021-04-29 16:38:19 INFO] [run:553][39m Playing your experiment's method now...
+[36m[2021-04-29 16:38:19 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[36m[2021-04-29 16:38:19 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-04-29 16:38:19 INFO] [activity:161][39m Action: make-new-transaction
+[36m[2021-04-29 16:38:19 DEBUG] [activity:180][39m   => succeeded with '{'status': 201, 'headers': {'Content-Type': 'application/json', 'Content-Length': '47', 'Server': 'Werkzeug/0.16.1 Python/3.8.5', 'Date': 'Thu, 29 Apr 2021 15:38:19 GMT'}, 'body': {'message': 'tx will be added to block 2'}}'
+[36m[2021-04-29 16:38:19 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-04-29 16:38:19 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-04-29 16:38:19 INFO] [activity:161][39m Probe: check-chain
+[36m[2021-04-29 16:38:19 DEBUG] [activity:180][39m   => succeeded with '{'status': 200, 'headers': {'Content-Type': 'application/json', 'Content-Length': '381', 'Server': 'Werkzeug/0.16.1 Python/3.8.5', 'Date': 'Thu, 29 Apr 2021 15:38:19 GMT'}, 'body': {'index': 2, 'message': 'New block was forged', 'previous_hash': 'd254da0f85b5b74009a412df0ec70a0bdbea5947a98c9c1293febb65df1031ed', 'proof': 17492, 'tx': [{'amount': 20, 'receiver': 'new-other-address', 'sender': 'me'}, {'amount': 1, 'receiver': '1fa87a6cbec54686ba54f5d07c84dbfc', 'sender': '0'}]}}'
+[36m[2021-04-29 16:38:19 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-04-29 16:38:19 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-04-29 16:38:19 INFO] [activity:161][39m Action: mine-block
+[36m[2021-04-29 16:38:20 DEBUG] [activity:180][39m   => succeeded with '{'status': 200, 'headers': {'Content-Type': 'application/json', 'Content-Length': '284', 'Server': 'Werkzeug/0.16.1 Python/3.8.5', 'Date': 'Thu, 29 Apr 2021 15:38:20 GMT'}, 'body': {'index': 3, 'message': 'New block was forged', 'previous_hash': '4401fa7726a5a66e4b360bcb9627e4b7aca2e37205b62f50d6a427ab30b827f5', 'proof': 3641, 'tx': [{'amount': 1, 'receiver': '1fa87a6cbec54686ba54f5d07c84dbfc', 'sender': '0'}]}}'
+[36m[2021-04-29 16:38:20 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-04-29 16:38:20 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-04-29 16:38:20 INFO] [activity:161][39m Probe: check-chain
+[36m[2021-04-29 16:38:20 DEBUG] [activity:180][39m   => succeeded with '{'status': 200, 'headers': {'Content-Type': 'application/json', 'Content-Length': '284', 'Server': 'Werkzeug/0.16.1 Python/3.8.5', 'Date': 'Thu, 29 Apr 2021 15:38:20 GMT'}, 'body': {'index': 4, 'message': 'New block was forged', 'previous_hash': '1f452c31f6d63a8ae78d5aec4022868dfdf2f7a7f7edd0312a807f43d37e9941', 'proof': 2282, 'tx': [{'amount': 1, 'receiver': '1fa87a6cbec54686ba54f5d07c84dbfc', 'sender': '0'}]}}'
+[36m[2021-04-29 16:38:20 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-04-29 16:38:20 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[36m[2021-04-29 16:38:20 DEBUG] [run:496][39m Running steady-state hypothesis after the method
+[32m[2021-04-29 16:38:20 INFO] [hypothesis:183][39m Steady state hypothesis: Chain exists
+[36m[2021-04-29 16:38:20 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2021-04-29 16:38:20 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-04-29 16:38:20 INFO] [activity:161][39m Probe: chain-exists
+[36m[2021-04-29 16:38:20 DEBUG] [activity:180][39m   => succeeded with '{'status': 200, 'headers': {'Content-Type': 'application/json', 'Content-Length': '1296', 'Server': 'Werkzeug/0.16.1 Python/3.8.5', 'Date': 'Thu, 29 Apr 2021 15:38:20 GMT'}, 'body': {'chain': [{'index': 1, 'previous_hash': '1', 'proof': 100, 'timestamp': 1619710696.7310731, 'tx': []}, {'index': 2, 'previous_hash': 'd254da0f85b5b74009a412df0ec70a0bdbea5947a98c9c1293febb65df1031ed', 'proof': 17492, 'timestamp': 1619710699.98302, 'tx': [{'amount': 20, 'receiver': 'new-other-address', 'sender': 'me'}, {'amount': 1, 'receiver': '1fa87a6cbec54686ba54f5d07c84dbfc', 'sender': '0'}]}, {'index': 3, 'previous_hash': '4401fa7726a5a66e4b360bcb9627e4b7aca2e37205b62f50d6a427ab30b827f5', 'proof': 3641, 'timestamp': 1619710700.0130727, 'tx': [{'amount': 1, 'receiver': '1fa87a6cbec54686ba54f5d07c84dbfc', 'sender': '0'}]}, {'index': 4, 'previous_hash': '1f452c31f6d63a8ae78d5aec4022868dfdf2f7a7f7edd0312a807f43d37e9941', 'proof': 2282, 'timestamp': 1619710700.0200727, 'tx': [{'amount': 1, 'receiver': '1fa87a6cbec54686ba54f5d07c84dbfc', 'sender': '0'}]}], 'length': 4}}'
+[36m[2021-04-29 16:38:20 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-04-29 16:38:20 DEBUG] [hypothesis:211][39m allowed tolerance is 200
+[32m[2021-04-29 16:38:20 INFO] [hypothesis:221][39m Steady state hypothesis is met!
+[36m[2021-04-29 16:38:20 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[32m[2021-04-29 16:38:20 INFO] [run:809][39m Let's rollback...
+[36m[2021-04-29 16:38:20 DEBUG] [__init__:355][39m No controls to apply on 'rollback'
+[32m[2021-04-29 16:38:20 INFO] [rollback:25][39m No declared rollbacks, let's move on.
+[36m[2021-04-29 16:38:20 DEBUG] [__init__:355][39m No controls to apply on 'rollback'
+[32m[2021-04-29 16:38:20 INFO] [run:421][39m Experiment ended with status: completed
+[36m[2021-04-29 16:38:20 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[36m[2021-04-29 16:38:20 DEBUG] [__init__:72][39m Cleaning up controls
+[36m[2021-04-29 16:38:20 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2021-04-29 16:38:35 DEBUG] [cli:73][39m ###############################################################################
+[36m[2021-04-29 16:38:35 DEBUG] [cli:74][39m Running command 'run'
+[36m[2021-04-29 16:38:35 DEBUG] [cli:78][39m Using settings file 'C:\Users\yolan\.chaostoolkit\settings.yaml'
+[36m[2021-04-29 16:38:36 DEBUG] [settings:26][39m The Chaos Toolkit settings file could not be found at 'C:\Users\yolan\.chaostoolkit\settings.yaml'.
+[36m[2021-04-29 16:38:36 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-04-29 16:38:36 DEBUG] [__init__:355][39m No controls to apply on 'loader'
+[36m[2021-04-29 16:38:36 DEBUG] [caching:25][39m Building activity cache...
+[36m[2021-04-29 16:38:36 DEBUG] [caching:35][39m Cached 7 activities
+[32m[2021-04-29 16:38:36 INFO] [experiment:47][39m Validating the experiment's syntax
+[36m[2021-04-29 16:38:36 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2021-04-29 16:38:36 DEBUG] [secret:75][39m Loading secrets...
+[36m[2021-04-29 16:38:36 DEBUG] [secret:92][39m Secrets loaded
+[32m[2021-04-29 16:38:36 INFO] [experiment:96][39m Experiment looks valid
+[36m[2021-04-29 16:38:36 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2021-04-29 16:38:36 DEBUG] [caching:25][39m Building activity cache...
+[36m[2021-04-29 16:38:36 DEBUG] [caching:35][39m Cached 7 activities
+[36m[2021-04-29 16:38:36 DEBUG] [configuration:54][39m Loading configuration...
+[36m[2021-04-29 16:38:36 DEBUG] [secret:75][39m Loading secrets...
+[36m[2021-04-29 16:38:36 DEBUG] [secret:92][39m Secrets loaded
+[36m[2021-04-29 16:38:36 DEBUG] [exit:89][39m System 'Windows-10-10.0.19041-SP0' does not expose SIGUSR signals
+[32m[2021-04-29 16:38:36 INFO] [run:323][39m Running experiment: Does the consensus method work accurately?
+[36m[2021-04-29 16:38:36 DEBUG] [__init__:39][39m Initializing controls
+[32m[2021-04-29 16:38:36 INFO] [run:342][39m Steady-state strategy: default
+[32m[2021-04-29 16:38:37 INFO] [run:345][39m Rollbacks strategy: default
+[36m[2021-04-29 16:38:37 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[36m[2021-04-29 16:38:37 DEBUG] [run:466][39m Running steady-state hypothesis before the method
+[32m[2021-04-29 16:38:37 INFO] [hypothesis:183][39m Steady state hypothesis: Chains exist and nodes are registered
+[36m[2021-04-29 16:38:37 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[36m[2021-04-29 16:38:37 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-04-29 16:38:37 INFO] [activity:161][39m Probe: chain-1-exists
+[36m[2021-04-29 16:38:37 DEBUG] [activity:180][39m   => succeeded with '{'status': 200, 'headers': {'Content-Type': 'application/json', 'Content-Length': '1296', 'Server': 'Werkzeug/0.16.1 Python/3.8.5', 'Date': 'Thu, 29 Apr 2021 15:38:37 GMT'}, 'body': {'chain': [{'index': 1, 'previous_hash': '1', 'proof': 100, 'timestamp': 1619710696.7310731, 'tx': []}, {'index': 2, 'previous_hash': 'd254da0f85b5b74009a412df0ec70a0bdbea5947a98c9c1293febb65df1031ed', 'proof': 17492, 'timestamp': 1619710699.98302, 'tx': [{'amount': 20, 'receiver': 'new-other-address', 'sender': 'me'}, {'amount': 1, 'receiver': '1fa87a6cbec54686ba54f5d07c84dbfc', 'sender': '0'}]}, {'index': 3, 'previous_hash': '4401fa7726a5a66e4b360bcb9627e4b7aca2e37205b62f50d6a427ab30b827f5', 'proof': 3641, 'timestamp': 1619710700.0130727, 'tx': [{'amount': 1, 'receiver': '1fa87a6cbec54686ba54f5d07c84dbfc', 'sender': '0'}]}, {'index': 4, 'previous_hash': '1f452c31f6d63a8ae78d5aec4022868dfdf2f7a7f7edd0312a807f43d37e9941', 'proof': 2282, 'timestamp': 1619710700.0200727, 'tx': [{'amount': 1, 'receiver': '1fa87a6cbec54686ba54f5d07c84dbfc', 'sender': '0'}]}], 'length': 4}}'
+[36m[2021-04-29 16:38:37 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-04-29 16:38:37 DEBUG] [hypothesis:211][39m allowed tolerance is 200
+[36m[2021-04-29 16:38:37 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-04-29 16:38:37 INFO] [activity:161][39m Probe: chain-2-exists
+[36m[2021-04-29 16:38:37 DEBUG] [activity:180][39m   => succeeded with '{'status': 200, 'headers': {'Content-Type': 'application/json', 'Content-Length': '173', 'Server': 'Werkzeug/0.16.1 Python/3.8.5', 'Date': 'Thu, 29 Apr 2021 15:38:37 GMT'}, 'body': {'chain': [{'index': 1, 'previous_hash': '1', 'proof': 100, 'timestamp': 1619710707.1859236, 'tx': []}], 'length': 1}}'
+[36m[2021-04-29 16:38:37 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-04-29 16:38:37 DEBUG] [hypothesis:211][39m allowed tolerance is 200
+[36m[2021-04-29 16:38:37 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-04-29 16:38:37 INFO] [activity:161][39m Probe: nodes-are-registered
+[36m[2021-04-29 16:38:37 DEBUG] [activity:180][39m   => succeeded with '{'status': 201, 'headers': {'Content-Type': 'application/json', 'Content-Length': '83', 'Server': 'Werkzeug/0.16.1 Python/3.8.5', 'Date': 'Thu, 29 Apr 2021 15:38:37 GMT'}, 'body': {'message': 'New node(s) added', 'total_nodes': ['127.0.0.1:5001']}}'
+[36m[2021-04-29 16:38:37 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-04-29 16:38:37 DEBUG] [hypothesis:211][39m allowed tolerance is 201
+[32m[2021-04-29 16:38:37 INFO] [hypothesis:221][39m Steady state hypothesis is met!
+[36m[2021-04-29 16:38:37 DEBUG] [__init__:355][39m No controls to apply on 'hypothesis'
+[32m[2021-04-29 16:38:37 INFO] [run:553][39m Playing your experiment's method now...
+[36m[2021-04-29 16:38:37 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[36m[2021-04-29 16:38:37 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[32m[2021-04-29 16:38:37 INFO] [activity:161][39m Action: simulate activity
+[36m[2021-04-29 16:38:41 DEBUG] [__init__:355][39m No controls to apply on 'activity'
+[36m[2021-04-29 16:38:41 DEBUG] [__init__:355][39m No controls to apply on 'method'
+[33m[2021-04-29 16:38:41 WARNING] [run:390][39m Received a termination signal (Ctrl-C)...
+[32m[2021-04-29 16:38:41 INFO] [run:421][39m Experiment ended with status: interrupted
+[36m[2021-04-29 16:38:41 DEBUG] [__init__:355][39m No controls to apply on 'experiment'
+[36m[2021-04-29 16:38:41 DEBUG] [__init__:72][39m Cleaning up controls
+[36m[2021-04-29 16:38:41 DEBUG] [caching:42][39m Clearing activities cache

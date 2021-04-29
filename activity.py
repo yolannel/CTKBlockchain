@@ -19,8 +19,8 @@ def run(a):
 def firstTrans():
     amount = random.randint(1, 50)
     s = "curl -X POST -H \"Content-Type: application/json\" -d \"{\\\"sender\\\": \\\"me\\\", "
-    s1 = "\\\"recipient\\\": \\\"someone-other-address\\\", \\\"amount\\\": " + str(amount)
-    s2 = "}\" http://127.0.0.1:5000/transactions/new"
+    s1 = "\\\"receiver\\\": \\\"someone-other-address\\\", \\\"amount\\\": " + str(amount)
+    s2 = "}\" http://127.0.0.1:5000/tx/new"
     final = s+s1+s2
     os.system(final)
 
@@ -28,8 +28,8 @@ def firstTrans():
 def secTrans():
     amount = random.randint(1, 50)
     s = "curl -X POST -H \"Content-Type: application/json\" -d \"{\\\"sender\\\": \\\"me\\\", "
-    s1 = "\\\"recipient\\\": \\\"someone-other-address\\\", \\\"amount\\\": " + str(amount)
-    s2 = "}\" http://127.0.0.1:5001/transactions/new"
+    s1 = "\\\"receiver\\\": \\\"someone-other-address\\\", \\\"amount\\\": " + str(amount)
+    s2 = "}\" http://127.0.0.1:5001/tx/new"
     final = s + s1 + s2
     os.system(final)
 

@@ -1,4 +1,4 @@
-# Let's demo the Chaos Toolkit using a Simple Blockchain!
+# Let's demo the Chaos Toolkit using a simple blockchain!
 Blockchains are interesting concepts to test using chaos engineering principles.
 This is because they operate based on user usage, taking advantage of a network of
 participants and internal algorithms to create a distributed, decentralized ledger.

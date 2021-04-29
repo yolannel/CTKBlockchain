@@ -25,14 +25,14 @@
             "provider": {
                 "type": "http",
                 "timeout": 1,
-                "url": "http://127.0.0.1:5000/transactions/new",
+                "url": "http://127.0.0.1:5000/tx/new",
                 "method": "POST",
                 "headers": {
                     "Content-Type": "application/json"
                 },
                 "arguments": {
                     "sender": "me",
-                    "recipient": "new-other-address",
+                    "receiver": "new-other-address",
                     "amount": 20
                 }
             }
